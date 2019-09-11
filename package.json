@@ -1,0 +1,19 @@
+{
+  "name": "trillo",
+  "version": "1.0.0",
+  "description": "Fictional Hotel Site",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass src/sass/index.scss src/css/index.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last ten versions' src/css/index.css -o  src/css/index.prefix.css",
+    "compress:css": "node-sass src/css/index.prefix.css src/css/index.min.css --output-style compressed "
+  },
+  "author": "Olaonipekun Carew",
+  "license": "ISC"
+}

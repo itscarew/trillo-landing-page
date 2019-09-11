@@ -1,0 +1,95 @@
+$color-primary: #eb2f64;
+$color-dark: #4b4b4b;
+$color-darker: #181818;
+$color-light: #fff;
+$color-light-gray: #afafaf;
+$color-lighter-gray: #f1f1f1;
+$color-gray: #e6e6e6;
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    font-size: 58.5%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary,
+    rgba($color-primary, 0.8)
+  );
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.2rem;
+  color: $color-dark !important;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  color: $color-dark;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  color: $color-light-gray;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 7rem auto;
+  position: relative;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width: 0px) and (max-width: 1024px) {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+.view {
+  width: 1005;
+  display: flex;
+  background-color: $color-lighter-gray;
+
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

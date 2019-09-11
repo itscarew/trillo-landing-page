@@ -1,0 +1,124 @@
+.header {
+  position: relative;
+  background-color: $color-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 0rem;
+    padding-bottom: 2rem;
+  }
+
+  &__logo {
+    padding: 0 2rem;
+
+    & h1 {
+      color: $color-primary;
+    }
+  }
+
+  &__form {
+    @media screen and (min-width: 0px) and (max-width: 550px) {
+      order: 1;
+      flex-grow: 1;
+    }
+
+    &_form {
+      display: flex;
+      &_input {
+        background-color: $color-lighter-gray;
+        width: 25rem;
+        padding: 0.5rem 2rem;
+        border-radius: 1.8rem;
+        transition: all 0.2s ease-out;
+
+        @media screen and (min-width: 0px) and (max-width: 550px) {
+          width: 100%;
+          border-radius: 0rem;
+        }
+
+        &:focus {
+          width: 30rem;
+
+          @media screen and (min-width: 0px) and (max-width: 550px) {
+            width: 100%;
+          }
+        }
+      }
+      &_button {
+        background-color: transparent;
+        margin-left: -2.5rem;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 15%;
+    align-self: stretch;
+    & > span {
+      position: relative;
+      flex-grow: 1;
+      padding: 2rem;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      transition: all 0.2s ease-out;
+      &:hover {
+        background-color: $color-lighter-gray;
+        cursor: pointer;
+      }
+    }
+
+    &_circle {
+      background: $color-primary;
+      color: $color-light;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 15%;
+      right: 15%;
+      border-radius: 50%;
+      font-size: 1rem;
+
+      @media screen and (min-width: 0px) and (max-width: 550px) {
+        top: 22%;
+        right: 22%;
+      }
+    }
+
+    &_notifications {
+      font-size: 1.5rem;
+      color: $color-light-gray;
+    }
+
+    &_message {
+      font-size: 1.5rem;
+      color: $color-light-gray;
+    }
+
+    &_avatar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & figure {
+        width: 4.5rem;
+        height: 4.5rem;
+        object-fit: cover;
+        border-radius: 50%;
+        overflow: hidden;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & p {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

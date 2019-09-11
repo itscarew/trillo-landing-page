@@ -1,0 +1,32 @@
+.content__gallery {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  height: 18rem;
+  overflow-x: auto;
+
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    height: 10rem;
+  }
+
+  &_picturecontainer {
+    flex-shrink: 0;
+    flex-basis: 33.3%;
+
+    @media screen and (min-width: 0px) and (max-width: 768px) {
+      flex-grow: 1;
+    }
+
+    & figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.content__content {
+  background-color: $color-lighter-gray;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 0px) and (max-width: 550px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 551px) and (max-width: 767px) {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  &_about {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    background: $color-light;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+    & div:not(:last-child) {
+      border-bottom: 1px solid $color-gray;
+      padding: 1.5rem 0;
+    }
+
+    &_list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      font-size: 1.2rem;
+      color: $color-dark;
+      padding-right: 13rem !important;
+
+      @media screen and (min-width: 0px) and (max-width: 414px) {
+        padding-right: 0rem !important;
+      }
+
+      @media screen and (min-width: 415px) and (max-width: 1124px) {
+        padding-right: 1rem !important;
+      }
+
+      @media screen and (min-width: 1125px) {
+        padding-right: 6rem !important;
+      }
+
+      & ul {
+        & li {
+          list-style: square inside;
+        }
+      }
+    }
+
+    &_friends {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0 1rem 0;
+
+      &_info {
+        flex-basis: 70%;
+      }
+
+      &_pictures {
+        display: flex;
+        align-items: center;
+        flex-basis: 30%;
+
+        & figure {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          overflow: hidden;
+          border: 2px solid $color-light;
+          margin-right: -1rem;
+
+          & img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &_testimonies {
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & div {
+      margin-bottom: 0.2rem;
+    }
+
+    &_testify {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: $color-light;
+      margin: 2rem;
+      padding: 2rem;
+      z-index: 2;
+      overflow: hidden;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+      &::before {
+        content: "\201c";
+        position: absolute;
+        top: 7.5rem;
+        left: -1rem;
+        line-height: 1rem;
+        font-size: 20rem;
+        color: $color-gray;
+        font-family: "Poppins", sans-serif;
+        z-index: -1;
+      }
+
+      &_text {
+        margin-bottom: 1rem !important;
+      }
+
+      &_info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_picture {
+          display: flex;
+          align-items: center;
+
+          & figure {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1rem;
+
+            & img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          &_name {
+            display: flex;
+            flex-direction: column;
+
+            & :first-child {
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          }
+        }
+
+        &_stat {
+          font-size: 1.8rem;
+          color: $color-primary;
+        }
+      }
+    }
+
+    &_showall {
+      margin: 1rem;
+      padding: 2rem;
+
+      & a {
+        color: $color-primary;
+        font-size: 1.2rem;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}
