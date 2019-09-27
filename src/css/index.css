@@ -60,7 +60,7 @@ button {
       box-shadow: none; } }
 
 .view {
-  width: 1005;
+  width: 100%;
   display: flex;
   background-color: #f1f1f1; }
   @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -328,7 +328,7 @@ button {
   .content__bookings {
     width: 100%;
     background-color: #fff;
-    padding: 2.5rem 2.5rem 0 2.5rem; }
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem; }
     .content__bookings_info {
       width: 100%;
       color: #afafaf;
