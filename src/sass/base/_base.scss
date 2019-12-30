@@ -1,4 +1,4 @@
-$color-primary: #1b664d;
+$color-primary: #eb2f64;
 $color-dark: #4b4b4b;
 $color-darker: #181818;
 $color-light: #fff;
@@ -28,11 +28,11 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   background-image: linear-gradient(
-    to bottom,
-    $color-primary,
-    rgba($color-primary, 0.8)
+    to right bottom,
+    rgba($color-primary, 1),
+    rgba($color-primary, 1.8)
   );
   line-height: 1.8;
   min-height: 100vh;
@@ -57,12 +57,12 @@ select {
   outline: none;
   color: $color-dark;
   border: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 ::placeholder {
   color: $color-light-gray;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 button {
