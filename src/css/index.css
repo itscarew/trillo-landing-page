@@ -16,7 +16,7 @@ html {
       font-size: 58.5%; } }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-image: linear-gradient(to right bottom, #eb2f64, #eb2f64);
   line-height: 1.8;
   min-height: 100vh; }
@@ -37,11 +37,11 @@ select {
   outline: none;
   color: #4b4b4b;
   border: none;
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 ::placeholder {
   color: #afafaf;
-  font-family: "Nunito Sans", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 button {
   outline: none;
@@ -248,7 +248,7 @@ button {
       height: 14rem; } }
   .content__gallery_picturecontainer {
     flex-shrink: 0;
-    flex-basis: 33.3%; }
+    flex-basis: 33.33%; }
     @media screen and (min-width: 0px) and (max-width: 414px) {
       .content__gallery_picturecontainer {
         flex-basis: auto; } }

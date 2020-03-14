@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary, 1),
@@ -57,12 +57,12 @@ select {
   outline: none;
   color: $color-dark;
   border: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 ::placeholder {
   color: $color-light-gray;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 button {
